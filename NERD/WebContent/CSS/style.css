@@ -1,0 +1,97 @@
+/*****************************************/
+/* Author: Arron Parker
+/* Additional Ammendments: Neil Newton
+/****************************************/
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+    background-color: #d2d2d2;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:60px
+}
+
+html {
+    height: 100%;
+}
+
+#container {
+    width:83.33%;
+    margin: 0 auto;
+    margin-top:5px;
+}
+
+#header {
+    background: rgba(64, 64, 64, 0.8);
+    padding:10px;
+    text-align: left;
+}
+
+#header-title{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #e6e6e6;
+    padding:20px;
+}
+
+#content {
+
+}
+
+#footer {
+
+    background-color: #262626;
+    text-align: center;
+
+    height: 60px;
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+}
+
+#footer-copyright {
+
+    text-align: center;
+    padding:10px;
+    font-size: 0.8em;
+    color:#e6e6e6;
+}
+
+#search-results {
+    margin-left:5px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    float:left;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
